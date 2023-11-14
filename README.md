@@ -105,7 +105,7 @@ $$\ \phi_i^{(6)} (s)  = (1 - r)^6_+ (35 r ^ 2 + 18 r + 3) \$$
 $$\ \phi_i^{(7)} (s)  = (1 - r)^7_+ (16 r ^ 2 + 7 r + 1) \$$
 $$\ \phi_i^{(8)} (s)  = (1 - r)^8_+ (32 r ^ 3 + 25 r^2 + 8 r + 1) \$$
 
-where $\ r = |h_i(s-c_i)|\$ and $\ (\cdot)_+ \$ denotes the positive part.
+where $\ r = |h_i(s-c_i)| \$ and $\ (\cdot)_+ \$ denotes the positive part.
 Moreover, we propose a set of _mollifier-like basis functions_:
 $$\ \varphi _i(s) =
     \exp\left( - \dfrac{1}{1 - |a_i (s - c_i)| ^ 2} \right)  \text{if } |a_i (s - c_i)| < 1 \$$
