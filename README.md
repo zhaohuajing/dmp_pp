@@ -68,7 +68,7 @@ _dmp/_ contain the following files:
   * `compute_D1(n, dt)` returns the matrix which discretize the first derivative of a 1D function discretized on an equispaced time domain of `n` points and `dt` timestep, using a second orde estimate;
   * `compute_D2(n, dt)` returns the matrix which discretize the second derivative of a 1D function discretized on an equispaced time domain of `n` points and `dt` timestep, using a second orde estimate.
 * _dmp_cartesian.py_ implements the DMP class, together with its methods.
-* _exponential_integrator.py_ implements the functions needed to perform an integration step using the Exponential Euler method. In particular the function `exp_eul_step(y, A, b, dt)` returns the solution at time $\ n+1 \$, computed as $ y_{n+1} = y_n + k \varphi_1(k A) (A y_n + b(t_n)) \$ for the problem $\ \dot{y} = A y + b(t) \$, with $y_n$ = `y`, $A$ = `A`, $b(t_n)$ = `b`, and $k$ = `dt`.
+* _exponential_integrator.py_ implements the functions needed to perform an integration step using the Exponential Euler method. In particular the function `exp_eul_step(y, A, b, dt)` returns the solution at time $ n+1 $, computed as $\ y_{n+1} = y_n + k \varphi_1(k A) (A y_n + b(t_n)) \$ for the problem $\ \dot{y} = A y + b(t) \$, with $y_n$ = `y`, $A$ = `A`, $b(t_n)$ = `b`, and $k$ = `dt`.
 * _rotation_matri.py_ implements the functions needed to compute the roto-dilatation matrix. In particular, `roto_dilatation(x0, x1)` returns the roto-dilatation matrix which maps `x0` to `x1`.
 
 #### _demos/_ ####
