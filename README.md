@@ -91,9 +91,9 @@ Parameter $s \in \mathbb{R}$ is a re-parametrization of time, governed by the _C
 $$\ \tau \dot{s} = -\alpha s, \qquad \alpha > 0. \$$
 
 Forcing term $\mathbf{f}$ is written in terms of _basis functions_. Each component $f_j (s)$ is written as
-$$\ f_j(s) = \frac{\sum_{i=0}^N \omega_i \psi_i(s)}{\sum_{i=0}^N \psi_i(s)} s , \$$
+$$\ f_j(s) = \frac{\sum^N_{i=0} \omega_i \psi_i(s)}{\sum^N_{i=0} \psi_i(s)} s , \$$
 where $\omega_i\in\mathbb{R}$ and $\{\psi_i(s)\}_{i=0}^N$ is a set of basis functions.
-In the literature, _Ragial Gaussian basis functions_ are used: given a set of centers $\{c_i\}_{i=0}^N$ and a set of positive widths $\{h_i\}_{i=1}^N$, we have
+In the literature, _Ragial Gaussian basis functions_ are used: given a set of centers $\{c_i\}_{i=0}^N$ and a set of positive widths $\ \{h_i\}_{i=1}^N\$, we have
 $$\ \psi_i(s) = \exp( -h_i (s - c_i)^2 ). \$$
 
 We extend the approach to multiple set of basis functions. In particular, we propose to use various classes of _Wendland's basis functions_
