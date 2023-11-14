@@ -97,21 +97,19 @@ In the literature, _Ragial Gaussian basis functions_ are used: given a set of ce
 $$\ \psi_i(s) = \exp( -h_i (s - c_i)^2 ). \$$
 
 We extend the approach to multiple set of basis functions. In particular, we propose to use various classes of _Wendland's basis functions_:
-$$ \begin{aligned}\phi_i^{(2)} (s) & = (1 - r)^2_+ \\
+$$\ \begin{aligned}\phi_i^{(2)} (s) & = (1 - r)^2_+ \\
 \phi_i^{(3)} (s) & = (1 - r)^3_+ \\
 \phi_i^{(4)} (s) & = (1 - r)^4_+ (4r + 1) \\
 \phi_i^{(5)} (s) & = (1 - r)^5_+ (5r + 1) \\
 \phi_i^{(6)} (s) & = (1 - r)^6_+ (35 r ^ 2 + 18 r + 3) \\
 \phi_i^{(7)} (s) & = (1 - r)^7_+ (16 r ^ 2 + 7 r + 1) \\
-\phi_i^{(8)} (s) & = (1 - r)^8_+ (32 r ^ 3 + 25 r^2 + 8 r + 1) \\
-\end{aligned} $$
+\phi_i^{(8)} (s) & = (1 - r)^8_+ (32 r ^ 3 + 25 r^2 + 8 r + 1)
+\end{aligned} \$$
 where $ r = |h_i(s-c_i)|$ and $(\cdot)_+ $ denotes the positive part.
 Moreover, we propose a set of _mollifier-like basis functions_
 $$\ \varphi _i(s) =
-\begin{cases}
     \exp\left( - \dfrac{1}{1 - |a_i (s - c_i)| ^ 2} \right) & \text{if } |a_i (s - c_i)| < 1 \\
-    0 & \text{otherwise}
-\end{cases} . \$$
+    0 & \text{otherwise}. \$$
 
 ![Plot of the basis functions.](doc/basis.png)
 
