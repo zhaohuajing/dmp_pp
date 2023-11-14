@@ -84,10 +84,8 @@ _demos/_ contain the following files:
 ### Formulation ###
 
 The term _Dynamic Movement Primitives_ (DMPs) refers to a framework for trajectory learning based on second order ODE of spring-mass-damping type:
-$ \begin{cases}
-    \tau \dot{\mathbf{v}} = \mathbf{K} (\mathbf{g} - \mathbf{x}) - \mathbf{D} \mathbf{v} - \mathbf{K} ( \mathbf{g} - \mathbf{x}_0 ) s + \mathbf{K} \mathbf{f}(s) \\
-    \tau \dot{\mathbf{x}} = \mathbf{v}
-\end{cases} , $
+$$  \tau \dot{\mathbf{v}} = \mathbf{K} (\mathbf{g} - \mathbf{x}) - \mathbf{D} \mathbf{v} - \mathbf{K} ( \mathbf{g} - \mathbf{x}_0 ) s + \mathbf{K} \mathbf{f}(s) \\
+    \tau \dot{\mathbf{x}} = \mathbf{v} , $$
 where $\mathbf{x, v, g, x_0, f} \in \mathbb{R}^d$ are, respectively, position and velocity of the system, goal and starting positions, and the non-linear forcing term. Matrices $\mathbf{K,D}\in\mathbb{R}^{d\times d}$ are diagonal matrices representing the elastic and damping terms.
 Parameter $s \in \mathbb{R}$ is a re-parametrization of time, governed by the _Canonical System_
 $$ \tau \dot{s} = -\alpha s, \qquad \alpha > 0. $$
