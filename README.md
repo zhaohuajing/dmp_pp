@@ -96,9 +96,8 @@ where $\ \omega_i\in\mathbb{R}$ and $\{\psi_i(s)\}_{i=0}^N \$ is a set of basis 
 In the literature, _Ragial Gaussian basis functions_ are used: given a set of centers $\ \{c_i\}_{i=0}^N \$ and a set of positive widths $\ \{h_i\}_{i=1}^N\$, we have
 $$\ \psi_i(s) = \exp( -h_i (s - c_i)^2 ). \$$
 
-We extend the approach to multiple set of basis functions. In particular, we propose to use various classes of _Wendland's basis functions_
-$$\ \begin{aligned}
-\phi_i^{(2)} (s) & = (1 - r)^2_+ \\
+We extend the approach to multiple set of basis functions. In particular, we propose to use various classes of _Wendland's basis functions_:
+$$\ \begin{aligned}\phi_i^{(2)} (s) & = (1 - r)^2_+ \\
 \phi_i^{(3)} (s) & = (1 - r)^3_+ \\
 \phi_i^{(4)} (s) & = (1 - r)^4_+ (4r + 1) \\
 \phi_i^{(5)} (s) & = (1 - r)^5_+ (5r + 1) \\
