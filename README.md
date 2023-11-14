@@ -88,16 +88,16 @@ $$\  \tau \dot{\mathbf{v}} = \mathbf{K} (\mathbf{g} - \mathbf{x}) - \mathbf{D} \
     \tau \dot{\mathbf{x}} = \mathbf{v} , \$$
 where $\mathbf{x, v, g, x_0, f} \in \mathbb{R}^d$ are, respectively, position and velocity of the system, goal and starting positions, and the non-linear forcing term. Matrices $\mathbf{K,D}\in\mathbb{R}^{d\times d}$ are diagonal matrices representing the elastic and damping terms.
 Parameter $s \in \mathbb{R}$ is a re-parametrization of time, governed by the _Canonical System_
-$$ \tau \dot{s} = -\alpha s, \qquad \alpha > 0. $$
+$$\ \tau \dot{s} = -\alpha s, \qquad \alpha > 0. \$$
 
 Forcing term $\mathbf{f}$ is written in terms of _basis functions_. Each component $f_j (s)$ is written as
-$$ f_j(s) = \frac{\sum_{i=0}^N \omega_i \psi_i(s)}{\sum_{i=0}^N \psi_i(s)} s , $$
+$$\ f_j(s) = \frac{\sum_{i=0}^N \omega_i \psi_i(s)}{\sum_{i=0}^N \psi_i(s)} s , \$$
 where $\omega_i\in\mathbb{R}$ and $\{\psi_i(s)\}_{i=0}^N$ is a set of basis functions.
 In the literature, _Ragial Gaussian basis functions_ are used: given a set of centers $\{c_i\}_{i=0}^N$ and a set of positive widths $\{h_i\}_{i=1}^N$, we have
-$$ \psi_i(s) = \exp( -h_i (s - c_i)^2 ). $$
+$$\ \psi_i(s) = \exp( -h_i (s - c_i)^2 ). \$$
 
 We extend the approach to multiple set of basis functions. In particular, we propose to use various classes of _Wendland's basis functions_
-$$ \begin{aligned}
+$$\ \begin{aligned}
 \phi_i^{(2)} (s) & = (1 - r)^2_+ \\
 \phi_i^{(3)} (s) & = (1 - r)^3_+ \\
 \phi_i^{(4)} (s) & = (1 - r)^4_+ (4r + 1) \\
@@ -105,14 +105,14 @@ $$ \begin{aligned}
 \phi_i^{(6)} (s) & = (1 - r)^6_+ (35 r ^ 2 + 18 r + 3) \\
 \phi_i^{(7)} (s) & = (1 - r)^7_+ (16 r ^ 2 + 7 r + 1) \\
 \phi_i^{(8)} (s) & = (1 - r)^8_+ (32 r ^ 3 + 25 r^2 + 8 r + 1) \\
-\end{aligned}$$
+\end{aligned} \$$
 where $r = |h_i(s-c_i)|$ and $(\cdot)_+$ denotes the positive part.
 Moreover, we propose a set of _mollifier-like basis functions_
-$$ \varphi _i(s) =
+$$\ \varphi _i(s) =
 \begin{cases}
     \exp\left( - \dfrac{1}{1 - |a_i (s - c_i)| ^ 2} \right) & \text{if } |a_i (s - c_i)| < 1 \\
     0 & \text{otherwise}
-\end{cases} . $$
+\end{cases} . \$$
 
 ![Plot of the basis functions.](doc/basis.png)
 
